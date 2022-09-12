@@ -1,0 +1,98 @@
+1)explain about closures in javascript with example?
+a=>In closures global variables can be made local and private.
+closure is a function which have access to parent scope even if the parent scope is closed
+example:
+          function outerFunction(a) {
+                let a = 100;
+            return function innerFunction(b) {
+                let b = 200;
+                return function subFunction(c) {
+                return a + b + c;
+                }
+            }
+        }
+
+2)explain about shallow copy and deep copy?
+a=>shallow copy stores the references of objects to the original memory address.
+   it reflects changes made to the new or any copied object in the original object.
+   deep copy stores copies of the object value. 
+   it doesn't reflect changes made to the new or any copied object in the original object.
+
+ 3)explain about destructuring an object in javascript?
+ a=>it is a syntax for extracting values from an object property and assigning 
+ them to a variables. Es6 introduces the syntax. its a new feature of javascript.
+ example:   let empobj={
+            firstName:"susmitha",
+            middleName:"sai",
+            };
+            let{firstName:fname,middleName:mname}=empobj; =>extracting values and assign them to varaiable.
+            console.log(fname);
+            console.log(mname);
+
+
+4)What are the advantages of using arrow functions and give an example?
+a=>arrow functions are shorter in syntax its a es6 feature.
+we can use a function in a shorter way which we can reduce the code.
+we can use can use arrow functions every where we need to reduce code.
+example:
+          let square = (a) => a * a
+
+
+
+5)Explain about higher order functions in javascript?
+a=>higher order functions are functions that operate on other functions.
+ either by taking them as arguments or by returning them. 
+ it is a function that receives a function as an argument or returns the function as output.
+ there are of three:
+ Array.prototype.map
+ Array.prototype.filter
+ Array.prototype.reduce
+
+
+6)Explain about event looping in javascript?
+a=> javaScript has a runtime based on an event loop, which is responsible for executing the code collecting and processing events, 
+and executing queued tasks
+example:settimeout()
+
+
+
+7)Explain about building blocks of an angular application?
+a)modules:it is a container for group of related components. @ngModule
+components:a component holds of .js,.html,ts,.css files. @component to develop an application
+templates:this is the html file 
+meta data:the selector is creating the instance of the component.<app-root>
+data binding:it is the connection bridge between view and the model of the application. 
+they are of five.
+directives: controls behaviour of Dom element
+they are of 3 types=>component,decorator and template
+services:it is a  function or an object that can be used to share the data and 
+the behavior across the application.
+dependency injection: the ability to injet a service into component to give access
+to the service.
+
+
+8)What are the advantages of using Angular in web app development?
+a=>angular has an inbuilt command-line interface that makes it easy to create new projects.
+it has a great structure that makes it easy to work with.
+it applications are built using TypeScript language, a superscript for JavaScript, 
+which ensures higher security as it supports types.
+
+
+9)What is Single Page Application and explain about the advantages.
+a=>single pagr application is html page which loads only once.
+An important feature of single page applications is performance.
+ they get a performance by loading HTML, CSS, 
+and JavaScript resources as soon as the website is loaded.
+advantages:user experience, client side rendering, performance.
+
+
+
+10)Explain about different data bindings in angular?
+a=>data bindings are of 5 types:
+one way binding(interpolation)->data flows only in one direction(model to view)
+ {{}}
+ property binding->component property into the target element property(model to view)
+ []
+ event binding->view to model->() we can use with custom events with "$".
+ two way binding->[()] ->data flows in both directions model to view and view to model.
+ attribute binding->[attrib.attribute Name]->model to view.
