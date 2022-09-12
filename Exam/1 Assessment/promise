@@ -1,0 +1,10 @@
+promises:
+promise is an object in java script represents eventual completion of an
+asynchronous operation.
+promises has three properties
+1.pending
+2.fulfilled
+3.rejected
+promise object is pending the result is undefined
+promise object is fulfilled the result is value
+promise object is rejected the result is error

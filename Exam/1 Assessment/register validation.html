@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+    <script>
+            function validateUserName() {
+            var userCtrl = document.getElementById('userName');
+            if (userCtrl.value == "" ) {
+                document.getElementById("userNameError").innerHTML = "User Name is mandatory";
+                userCtrl.focus();
+                return false;
+            }
+            else {
+                if (userCtrl.value.length < 6 && userCtrl.value=="`@#$ %^&*()+=-[]\\\';,./{}|\":<>? ~" ) {
+                    document.getElementById("userNameError").innerHTML = "Min. 6 characters are required and spl characters";
+                    passCtrl.focus();
+                    return false;
+                }
+                document.getElementById("userNameError").innerHTML = "";
+                return true;
+            }
+        } 
+
+        function validatePassword() {
+            var passCtrl = document.getElementById("password");
+            if (passCtrl.value == "" ) {
+                document.getElementById("passwordError").innerHTML = "Password is mandatory";
+                userCtrl.focus();
+                return false;
+            }
+
+            else {
+                if(passCrtl.value=="`#$ %^&*()+=-[]\\\';,./{}|\":<>? ~" ){
+                document.getElementById("passwordError").innerHTML = "special charaters allowed ";
+                passCtrl.fous();
+                return false;
+            }
+            document.getElementById("userNameError").innerHTML = "";
+                return true;
+        }
+    }
+        function validateMobileno() {
+            var mCtrl = document.getElementById("Mobile number");
+            if (userCtrl.value >10 ) {
+                document.getElementById("Error").innerHTML = "10 numbers are allowed";
+                userCtrl.focus();
+                return false;
+            }
+            else {
+                document.getElementById("Error").innerHTML = "";
+                return true;
+            }
+        }
+        function validateAddress() {
+            var userCtrl = document.getElementById("Address");
+            if (userCtrl.value =="`@#$ %^&*()+=-[]\\\';./{}|\":<>? ~") {
+                document.getElementById("Error").innerHTML = "only , allowed";
+                userCtrl.focus();
+                return false;
+            }
+
+            else {
+                document.getElementById("Error").innerHTML = "";
+                return true;
+            }
+        }
+
+        function validateData() {
+            let uStatus = validateUserName();
+            let pStatus = validatePassword();
+            let aStatus = validateAddress();
+            let mStatus = validateMobileno();
+            if (uStatus == false || pStatus == false||
+                aStatus==false || mStatus==false) {
+                event.preventDefault();
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    <form action="register.aspx" method="post" novalidate onsubmit="validateData()">
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <td>Enter User Name</td>
+                <td>
+                    <input type="text" id="userName" value="" placeholder="User Name" onblur="validateUserName()"
+                        required> <br>
+                    <span id="userNameError"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" id="password" value="" placeholder="Password" onblur="validatePassword()">
+                    <br>
+                    <span id="passwordError"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Mobile Number</td>
+                <td>
+                    <input type="text" id="number" value="" placeholder="mobile number" onblur="validateMobileno()">
+                    <br>
+                    <span id="Mobile number Error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Date of birth</td>
+                <td>
+                    <input type="date" name="dob">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter address</td>
+                <td>
+                    <input type="text" name="Address" onblur="validateAddress()">
+                    <br>
+                    <span id="AddressError"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Register user">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

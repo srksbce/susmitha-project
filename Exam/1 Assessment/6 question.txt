@@ -1,0 +1,4 @@
+Flex and css grid are box layouts in css
+flex and grid in css are both same when it comes to dimensional property
+flex is one dimensional box layout
+grid is two dimensional box layout

@@ -1,0 +1,16 @@
+javascript:
+it is a scripting language which helps you create interactive web pages.
+ client-side programming, 
+ runs on users web browser without webserver.
+ the script is placed in the head or body tag in html page.
+it dosen't support interface concept
+
+
+
+typescript:
+typescript is modern scripting language
+it is statically compiled language to write a piece of java script code
+ It is a statically compiled language to write clear and simple JavaScript code. 
+ it can run on node js
+ it has types and interfaces
+ it supports prototype

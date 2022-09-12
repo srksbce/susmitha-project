@@ -1,0 +1,8 @@
+Call back function: call back is a function that is passed as an 
+argument to another function. 
+All the variables of this function must be declared
+in the call back function scope.
+we can call this function when ever we want in the later code within the program.
+
+
+call back hell:it is nested call back function

@@ -1,0 +1,4 @@
+function currying:
+ currying a function that takes one argument at a time and returns new 
+ function expecting the next argument
+ when you need to use the same call with some of the same parameters currying is used
