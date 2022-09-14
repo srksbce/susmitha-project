@@ -1,0 +1,15 @@
+call by value:
+calling the method with a parameter value
+
+It copies the value of a variable passed in a function to a local variable.
+Both these variables occupy separate locations in memory.
+
+
+
+
+call by reference:
+calling a method with parameter as a reference the argument reference is passed to 
+the parameter
+
+both variables occupy the same location in memory.
+Changes in one object variable affect the other object variable.

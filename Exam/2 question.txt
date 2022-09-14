@@ -1,0 +1,13 @@
+Using for.in loop: The properties of the object can be iterated over using a for..in loop. This loop is used to iterate over all iterable properties of an object. 
+Some objects may contain properties that may be inherited from their prototypes.
+
+
+ The hasOwnProperty() method can be used to check if the property belongs to the object itself. 
+ The value of each key of the object can be found by using the key as the index of the object.
+ for(const key in empobj){
+    console.log(key,"-->",empobj[key])
+ }
+
+Object.entries(): This method is used to return an array of the object property pairs. The returned array is used with the map() method to extract the key and value from the pairs.
+The first index corresponds to the key and the second index corresponds to the value of the pair.
+for(const[key,value]of object.entries(empobj))
