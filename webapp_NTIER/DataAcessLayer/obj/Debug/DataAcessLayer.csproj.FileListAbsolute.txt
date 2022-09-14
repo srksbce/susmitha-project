@@ -1,0 +1,6 @@
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\DataAcessLayer\bin\Debug\DataAcessLayer.dll
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\DataAcessLayer\bin\Debug\DataAcessLayer.pdb
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\DataAcessLayer\obj\Debug\DataAcessLayer.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\DataAcessLayer\obj\Debug\DataAcessLayer.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\DataAcessLayer\obj\Debug\DataAcessLayer.dll
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\DataAcessLayer\obj\Debug\DataAcessLayer.pdb

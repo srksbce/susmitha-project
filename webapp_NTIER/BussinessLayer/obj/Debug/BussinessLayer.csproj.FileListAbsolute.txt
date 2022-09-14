@@ -1,0 +1,9 @@
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\BussinessLayer\bin\Debug\BussinessLayer.dll
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\BussinessLayer\bin\Debug\BussinessLayer.pdb
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\BussinessLayer\bin\Debug\DataAcessLayer.dll
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\BussinessLayer\bin\Debug\DataAcessLayer.pdb
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\BussinessLayer\obj\Debug\BussinessLayer.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\BussinessLayer\obj\Debug\BussinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\BussinessLayer\obj\Debug\BussinessLayer.csproj.CopyComplete
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\BussinessLayer\obj\Debug\BussinessLayer.dll
+C:\Users\HP\source\repos\susmitha-project\webapp_NTIER\BussinessLayer\obj\Debug\BussinessLayer.pdb
