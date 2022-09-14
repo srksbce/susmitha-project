@@ -1,2 +1,0 @@
-declare the data in a .js file so that it is available to any 
-sript block or any another program.
