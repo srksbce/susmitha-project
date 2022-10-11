@@ -11,5 +11,4 @@ export class EmployeeService {
   getData(url:string){
         return this.http.get(`${this.ApiUrl}${url}`);
   }
- 
 }
