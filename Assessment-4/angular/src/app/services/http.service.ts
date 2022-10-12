@@ -10,12 +10,14 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
+
   getData(url: string) {
+
     return this.http.get(`${this.ApiUrl}${url}`);
   }
 
   getDataWithParam(url: string, param: any) {
     return this.http.get(`${this.ApiUrl}${url}`, { params: new HttpParams().set("Id", param) });
   }
- 
+
 }

@@ -17,7 +17,7 @@ export class EmployeeComponent implements OnInit, OnDestroy {
   subscription!: Subscription
   deptId!: string | null;
 
-  constructor(private http:HttpService, private activatedRoute: ActivatedRoute) { }
+  constructor(private http: HttpService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.deptId = this.activatedRoute.snapshot.queryParamMap.get("deptId");
@@ -26,13 +26,14 @@ export class EmployeeComponent implements OnInit, OnDestroy {
   loadEmployees() {
     let url = "";
     if (this.deptId)
-      url ="Employee/EmpDetailsByDept?Id=" + this.deptId;
+      url = "Employee/EmpDetailsByDept?Id=" + this.deptId;
     else
       url = "Employee";
     //this.subscription = this.http.getDataWithParam("Employee/EmpDetailsByDept", this.deptId).subscribe({
-   // this.subscription = this.http.getData(url).subscribe({
-    this.subscription=this.http.getData(url).subscribe({
+    //this.subscription = this.http.getData(url).subscribe({
+    this.subscription = this.http.getData(url).subscribe({
       next: (data: any) => {
+
         this.employee = data.data as IEmployee[];
         console.log(this.employee);
       },
